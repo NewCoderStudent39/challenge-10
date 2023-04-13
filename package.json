@@ -1,0 +1,24 @@
+{
+    "name": "team-profile-generator",
+    "version": "1.0.0",
+    "description": "Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest",
+      "reset": "rm ./dist/index.html",
+      "start": "node index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/NewCoderStudent39/challenge-10"
+    },
+    "author": "Isaac McDaniel ilmcdaniel17@gmail.com",
+    "license": "ISC",
+    "homepage": "https://github.com/NewCoderStudent39/challenge-10/blob/main/README.md",
+    "dependencies": {
+      "inquirer": "^8.2.4"
+    },
+    "devDependencies": {
+      "jest": "^24.9.0"
+    }
+  }

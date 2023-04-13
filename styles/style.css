@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    display: relative;
+    background-color: var(--var2);
+}
+
+:root {
+    --var1: black;
+    --var2: white;
+    --var3: lightblue;
+    --var4: lightGray;
+    --var5: turquoise;
+    --var6: deepSkyBlue;
+    --var7: aquamarine;
+    --var8: lightgreen;
+    --var9: darkCyan;
+    --var10: mediumSlateBlue;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    font-size: 64px;
+    background-image: linear-gradient(-225deg, var(--var8) 0%, var(--var6) 33%,
+    var(--var5) 66%, var(--var3) 100%);
+    background-size: auto auto;
+    background-size: 200%, auto;
+    color: var(--var2);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+}
+
+.page-container {
+    background-color: var(--var3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+    position: relative;
+}
+
+.card-container {
+    box-shadow: 0 0 5px 2px;
+    background-color: var(--var4);
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 250px;
+}
+
+.card-container {
+    height: 350px;
+    box-shadow: 0 0 5px 2px;
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-container li {
+    background-color: var(--var7);
+    list-style-type: none;
+    padding-top:15px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(-225deg, var(--var10) 0%, var(--var9) 33%,
+    var(--var5) 66%, var(--var7) 100%);
+    background-size: auto auto;
+    background-size: 200%, auto;
+    color: var(--var2);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
